@@ -5,12 +5,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Application.CreateProducts
+namespace Shop.Application.ProductAdmin
 {
-    public class CreateProduct
+    public class UpdateProduct
     {
         private ApplicationDbContext _context;
-        public CreateProduct(ApplicationDbContext context)
+        public UpdateProduct(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -21,17 +21,18 @@ namespace Shop.Application.CreateProducts
             {
                 Name = vm.Name,
                 Description = vm.Description,
-                Value=vm.Value
+                Value = vm.Value
             });
             await _context.SaveChangesAsync();
         }
 
-    }
-    public class ProductViewModel
-    {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public decimal Value { get; set; }
 
+        public class ProductViewModel
+        {
+            public string Name { get; set; }
+            public string Description { get; set; }
+            public decimal Value { get; set; }
+
+        }
     }
 }

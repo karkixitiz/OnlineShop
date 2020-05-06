@@ -5,8 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Shop.Application.CreateProducts;
-using Shop.Application.GetProducts;
+using Shop.Application.ProductAdmin;
 using Shop.Database;
 
 namespace Shop.UI.Pages
@@ -19,8 +18,8 @@ namespace Shop.UI.Pages
             _ctx = ctx;
         }
         [BindProperty]
-        public Application.CreateProducts.ProductViewModel Product { get; set; }
-        public IEnumerable<Application.GetProducts.ProductViewModel> Products { get; set; }
+        public CreateProduct.ProductViewModel Product { get; set; }
+        public IEnumerable<GetProducts.ProductViewModel> Products { get; set; }
        
         
         public void OnGet()
