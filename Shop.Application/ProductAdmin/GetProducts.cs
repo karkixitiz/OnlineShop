@@ -19,16 +19,16 @@ namespace Shop.Application.ProductAdmin
             {
                 Id=x.Id,
                 Name = x.Name,
-                Description = x.Description,
-                Value = x.Value
+                Value = x.Value,
+                Description=x.Description
             });
 
         public class ProductViewModel
         {
             public int Id { get; set; }
             public string Name { get; set; }
-            public string Description { get; set; }
             public decimal Value { get; set; }
+            public string Description { get; set; }
 
         }
     }
