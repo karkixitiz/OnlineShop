@@ -19,8 +19,4 @@
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\js\admin\product-component.js" />
-  </ItemGroup>
-
 </Project>
