@@ -1,0 +1,14 @@
+﻿@page
+@model Shop.UI.Pages.CartModel
+@{
+}
+    <div>
+        @foreach (var p in Model.Cart)
+        {
+            <p>@p.Name</p>
+            <p>@p.Value</p>
+            <p>@p.Qty</p>
+            <p>@p.StockId</p>
+        }
+
+    </div>
