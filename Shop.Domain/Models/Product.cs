@@ -13,6 +13,6 @@ namespace Shop.Domain.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal Value { get; set; }
         public ICollection<Stock> Stock { get; set; }
-        public ICollection<OrderProduct> OrderProducts { get; set; }
+        
     }
 }

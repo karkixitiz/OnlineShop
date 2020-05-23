@@ -23,7 +23,8 @@ namespace Shop.Application.Cart
     {
         public int StockId { get; set; }
         public int Qty { get; set; }
-        }
+
+    }
     public void Do(Request request)
     {
             var cartList = new List<CartProduct>();
